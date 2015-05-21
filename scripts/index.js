@@ -1,7 +1,6 @@
 import React from 'react';
 import App from './App';
 import Title from './Title';
-import Navbar from './Navbar';
 import MenuButtonHere from './MenuButtonHere';
 import LogChart from './LogChart';
 

@@ -1,24 +1,22 @@
 import React from 'react';
-import Chart from 'react-d3/barchart';
+import BarChart from 'react-d3/barchart/BarChart';
 
 export default class LogChart extends React.Component {
+  
   render() {
-    return (
-      <Chart data={barData}
+
+ var barData = [
+  {label: 'A', value: 5},
+  {label: 'B', value: 6},
+  {label: 'F', value: 7}
+];
+
+       return <BarChart
+                  data={barData}
                   width={500}
                   height={200}
                   fill={'#3182bd'}
-                  title='Bar Chart'/>
-    );
+                  title='Bar Chart'/>;
+    
   }
 }
-
-	var barData = React.createClass({displayName: 'barData',
-	  render: function() {
-	    return (
-	      React.DOM.div({className: "commentBox"}, 
-	        "Hello, world! I am a CommentBox."
-	      )
-	    );
-	  }
-	});

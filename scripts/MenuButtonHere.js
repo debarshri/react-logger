@@ -8,11 +8,11 @@ export default class MenuButtonHere extends React.Component {
   render() {
     return (
     <ButtonGroup>
-    <DropdownButton bsStyle="success" title="Dropdown">
+    <DropdownButton bsStyle="success" title="Export">
       <MenuItem key="1" href="/home">Dropdown link</MenuItem>
       <MenuItem key="2">Dropdown link</MenuItem>
     </DropdownButton>
-    <Button bsStyle="info">Middle</Button>
+    <Button bsStyle="info">Bookmark</Button>
     <Button bsStyle="info">Right</Button>
   </ButtonGroup>   
    );

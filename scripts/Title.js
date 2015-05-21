@@ -4,6 +4,7 @@ import MenuItem from 'react-bootstrap/lib/MenuItem';
 import NavItem from 'react-bootstrap/lib/NavItem';
 import Nav from 'react-bootstrap/lib/Nav';
 import Navbar from 'react-bootstrap/lib/Navbar';
+import BarChart from 'react-d3/barchart';
 
 export default class Title extends React.Component {
   render() {
@@ -17,6 +18,14 @@ export default class Title extends React.Component {
         <MenuItem divider />
         <MenuItem eventKey='4' href='/dashboard/explore'>Explore</MenuItem>
       </DropdownButton>
+    </Nav>
+    <Nav right>
+      <NavItem>
+          Sign in
+      </NavItem>
+      <NavItem>
+          Sign up
+      </NavItem>
     </Nav>
   </Navbar>
     );
